@@ -26,16 +26,16 @@
             background-color: #f9f9f9;
         }
     </style>
-    <script>
-        function createRecaptcha() {
-            grecaptcha.render("recaptcha", {sitekey: "6LdUKqAdAAAAAOnPD7QOmWWv9PDX2_SP-Ia9kdHk", theme: "light"});
-        }
-        createRecaptcha();
-    </script>
   </head>
   <body>
     <div class="container">
         <div id="recaptcha"></div>
     </div>
   </body>
+  <script type="text/javascript">
+    function createRecaptcha() {
+        grecaptcha.render("recaptcha", {sitekey: "6LdUKqAdAAAAAOnPD7QOmWWv9PDX2_SP-Ia9kdHk", theme: "light"});
+    }
+    createRecaptcha();
+</script>
 </html>
