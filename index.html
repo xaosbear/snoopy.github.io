@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snoopy</title>
+    <style>
+        .rc-anchor-pt{display:none;}
+
+        #recaptcha {
+        display: inline-block;
+        position: relative;
+        }
+
+        #recaptcha:after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 1;
+            bottom: 3px;
+            right: 5px;
+            width: 100px;
+            height: 70px;
+            background-color: #f9f9f9;
+        }
+    </style>
+    <script>
+        function createRecaptcha() {
+            grecaptcha.render("recaptcha", {sitekey: "6LdUKqAdAAAAAOnPD7QOmWWv9PDX2_SP-Ia9kdHk", theme: "light"});
+        }
+        createRecaptcha();
+    </script>
+  </head>
+  <body>
+    <div class="container">
+        <div id="recaptcha"></div>
+    </div>
+  </body>
+</html>
