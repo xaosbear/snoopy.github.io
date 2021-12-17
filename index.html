@@ -31,8 +31,15 @@
     <div class="container">
         <div id="recaptcha"></div>
     </div>
+    <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
   </body>
   <script type="text/javascript">
+    function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
     function createRecaptcha() {
         grecaptcha.ready(function() {
           grecaptcha.execute('6LdUKqAdAAAAAOnPD7QOmWWv9PDX2_SP-Ia9kdHk', {action: 'submit'}).then(function(token) {
