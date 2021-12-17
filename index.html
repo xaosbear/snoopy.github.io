@@ -34,7 +34,6 @@
   </body>
   <script type="text/javascript">
     function createRecaptcha() {
-      e.preventDefault();
         grecaptcha.ready(function() {
           grecaptcha.execute('6LdUKqAdAAAAAOnPD7QOmWWv9PDX2_SP-Ia9kdHk', {action: 'submit'}).then(function(token) {
           });
